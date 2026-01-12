@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi Cuaca (RelativeLayout)"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvKota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bandung"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/tvSuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24°C"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvKota"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvKondisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hujan"
+        android:textSize="18sp"
+        android:layout_below="@id/tvSuhu"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh (Dummy)"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data contoh (tanpa internet)"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
