@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cuaca Hari Ini"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvKota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bandung"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:id="@+id/tvSuhuTugas"
+        style="@style/WeatherTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="24°C"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvKondisi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hujan"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh (Dummy)"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Info: Data contoh (tanpa internet)"
+        android:gravity="center"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>
