@@ -1,0 +1,16 @@
+<resources>
+    <color name="bg">#EAF3FF</color>
+    <color name="panel">#F7FBFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_muted">#64748B</color>
+
+    <color name="key_bg">#FFFFFF</color>
+    <color name="key_bg_soft">#E9F1FF</color>
+    <color name="key_text">#0F172A</color>
+
+    <color name="op_bg">#2F80FF</color>
+    <color name="op_text">#FFFFFF</color>
+
+    <color name="accent">#2F80FF</color>
+    <color name="shadow">#1A2F80FF</color>
+</resources>

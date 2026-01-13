@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <!-- Lingkaran besar background -->
+    <View
+        android:id="@+id/circle"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:background="@drawable/bg_circle"
+        android:alpha="0.25"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="-80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Panel kalkulator -->
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_panel"
+        android:padding="18dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.88"
+        app:layout_constraintHeight_percent="0.86">
+
+        <!-- Display -->
+        <TextView
+            android:id="@+id/tvExpression"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6000/2+3227*2"
+            android:textColor="@color/text_muted"
+            android:textSize="14sp"
+            android:gravity="end"
+            android:paddingTop="6dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="=12,454"
+            android:textColor="@color/text_primary"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:paddingBottom="14dp" />
+
+        <!-- Keypad -->
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnCount="4"
+            android:rowCount="5"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignMargins">
+
+            <!-- Row 1 -->
+            <TextView style="@style/KeySoft" android:id="@+id/btnAC" android:text="AC"/>
+            <TextView style="@style/KeySoft" android:id="@+id/btnPlusMinus" android:text="+/-"/>
+            <TextView style="@style/KeySoft" android:id="@+id/btnPercent" android:text="%"/>
+            <TextView style="@style/KeyOp" android:id="@+id/btnDivide" android:text="÷"/>
+
+            <!-- Row 2 -->
+            <TextView style="@style/Key" android:id="@+id/btn7" android:text="7"/>
+            <TextView style="@style/Key" android:id="@+id/btn8" android:text="8"/>
+            <TextView style="@style/Key" android:id="@+id/btn9" android:text="9"/>
+            <TextView style="@style/KeyOp" android:id="@+id/btnMultiply" android:text="×"/>
+
+            <!-- Row 3 -->
+            <TextView style="@style/Key" android:id="@+id/btn4" android:text="4"/>
+            <TextView style="@style/Key" android:id="@+id/btn5" android:text="5"/>
+            <TextView style="@style/Key" android:id="@+id/btn6" android:text="6"/>
+            <TextView style="@style/KeyOp" android:id="@+id/btnMinus" android:text="−"/>
+
+            <!-- Row 4 -->
+            <TextView style="@style/Key" android:id="@+id/btn1" android:text="1"/>
+            <TextView style="@style/Key" android:id="@+id/btn2" android:text="2"/>
+            <TextView style="@style/Key" android:id="@+id/btn3" android:text="3"/>
+            <TextView style="@style/KeyOp" android:id="@+id/btnPlus" android:text="+"/>
+
+            <!-- Row 5 -->
+            <TextView
+                style="@style/Key"
+                android:id="@+id/btn0"
+                android:text="0"
+                android:layout_columnSpan="2" />
+
+            <TextView style="@style/Key" android:id="@+id/btnDot" android:text="."/>
+            <TextView style="@style/KeyOp" android:id="@+id/btnEquals" android:text="="/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
