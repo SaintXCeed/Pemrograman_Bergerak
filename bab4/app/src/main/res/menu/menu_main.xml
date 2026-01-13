@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_second_activity"
+        android:title="Go to Second Activity" />
+    <item
+        android:id="@+id/menu_show_toast"
+        android:title="Show Toast" />
+    <item
+        android:id="@+id/menu_exit"
+        android:title="Exit" />
+</menu>
